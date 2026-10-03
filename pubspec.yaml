@@ -27,7 +27,6 @@ dependencies:
   # Notifications
   firebase_core: ^2.24.2
   firebase_messaging: ^14.7.9
-  flutter_local_notifications: ^18.0.1
 
   # File & Image
   image_picker: ^1.0.5
@@ -60,30 +59,9 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/
-     fonts:
+  fonts:
     - family: Vazirmatn
       fonts:
         - asset: assets/fonts/Vazirmatn-Regular.ttf
         - asset: assets/fonts/Vazirmatn-Bold.ttf
           weight: 700
-
-# ===== Splash Screen Config =====
-flutter_native_splash:
-  color: "#050810"
-  image: assets/images/logo.png
-  color_dark: "#050810"
-  image_dark: assets/images/logo.png
-  android_12:
-    image: assets/images/logo.png
-    color: "#050810"
-  android: true
-  ios: true
-  web: true
-
-# ===== Launcher Icon Config =====
-flutter_launcher_icons:
-  android: true
-  ios: true
-  image_path: "assets/images/logo.png"
-  adaptive_icon_background: "#050810"
-  adaptive_icon_foreground: "assets/images/logo.png"
