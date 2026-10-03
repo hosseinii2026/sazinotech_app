@@ -27,7 +27,7 @@ dependencies:
   # Notifications
   firebase_core: ^2.24.2
   firebase_messaging: ^14.7.9
-  flutter_local_notifications: ^16.3.0
+  flutter_local_notifications: ^18.0.1
 
   # File & Image
   image_picker: ^1.0.5
@@ -60,9 +60,7 @@ flutter:
   uses-material-design: true
   assets:
     - assets/images/
-    - assets/icons/
-    - assets/animations/
-  fonts:
+     fonts:
     - family: Vazirmatn
       fonts:
         - asset: assets/fonts/Vazirmatn-Regular.ttf
