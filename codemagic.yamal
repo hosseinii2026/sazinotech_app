@@ -1,15 +1,9 @@
 workflows:
   android-release:
     name: Android Release Build
-    max_build_duration: 60
-    instance_type: mac_mini_m2
     environment:
       flutter: 3.24.5
       java: 17
-    cache:
-      cache_paths:
-        - $HOME/.gradle/caches
-        - $HOME/.pub-cache
     scripts:
       - name: Get Flutter packages
         script: flutter pub get
@@ -17,10 +11,3 @@ workflows:
         script: flutter build apk --release --android-skip-build-dependency-validation
     artifacts:
       - build/app/outputs/flutter-apk/*.apk
-    publishing:
-      email:
-        recipients:
-          - hosseini2020@yahoo.com
-        notify:
-          success: true
-          failure: true
