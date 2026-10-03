@@ -20,7 +20,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.sazinotech_app"
-        minSdk = flutter.minSdkVersion
+        minSdk = 21
         targetSdk = 34
         versionCode = flutter.versionCode
         versionName = flutter.versionName
